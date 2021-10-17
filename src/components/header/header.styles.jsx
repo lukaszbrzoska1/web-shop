@@ -28,4 +28,5 @@ export const OptionLink = styled(Link)`
   padding: 10px 15px;
   text-transform: uppercase;
   cursor: pointer;
+  color: ${(props) => props.theme.text};
 `;

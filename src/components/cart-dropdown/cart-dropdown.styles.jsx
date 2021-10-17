@@ -9,7 +9,7 @@ export const CartDropdownContainer = styled.div`
   flex-direction: column;
   padding: 20px;
   border: 1px solid black;
-  background-color: white;
+  background-color: ${(props) => props.theme.background};
   top: 80px;
   right: 0px;
   z-index: 5;
@@ -28,5 +28,5 @@ export const EmptyMessageContainer = styled.span`
 `;
 
 export const CartDropdownButton = styled(CustomButton)`
-  margin-top: auto;  
+  margin-top: auto;
 `;

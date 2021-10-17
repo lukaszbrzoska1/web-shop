@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import CustomButton from '../custom-button/custom-button.component';
 
 export const CollectionItemContainer = styled.div`
-  width: 22vw;
+  width: 17vw;
   display: flex;
   flex-direction: column;
   height: 350px;
   align-items: center;
+  justify-self: center;
   position: relative;
 
   &:hover {
@@ -35,7 +36,7 @@ export const CollectionImageContainer = styled.div`
   background-size: cover;
   background-position: center;
   margin-bottom: 5px;
-  background-image: ${({imageUrl}) =>`url(${imageUrl})`}; 
+  background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
 
 export const CollectionFooterContainer = styled.div`
@@ -47,10 +48,11 @@ export const CollectionFooterContainer = styled.div`
 `;
 
 export const NameContainer = styled.span`
-  width: 90%;
+  width: 80%;
   margin-bottom: 15px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
+  width: 20%;
+  align-items: center;
 `;

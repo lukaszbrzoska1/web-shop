@@ -13,6 +13,11 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         ...state,
         hidden: !state.hidden,
       };
+    case CartActionTypes.TOGGLE_CART_RESET:
+      return {
+        ...state,
+        hidden: false,
+      };
     case CartActionTypes.ADD_ITEM:
       return {
         ...state,
@@ -29,6 +34,11 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         cartItems: state.cartItems.filter(
           (cartItem) => cartItem.id !== action.payload.id
         ),
+      };
+    case CartActionTypes.CLEAR_CART:
+      return {
+        ...state,
+        cartItems: [],
       };
     default:
       return state;

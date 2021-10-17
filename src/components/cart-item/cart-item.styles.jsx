@@ -18,4 +18,5 @@ export const CartItemDetails = styled.div`
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
+  color: ${(props) => props.theme.cart};
 `;
